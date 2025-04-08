@@ -1,0 +1,76 @@
+.input {
+  width: 26%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+        
+  & label {
+    color: hsl(0, 1%, 44%);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  
+  & label.invalid {
+    color: hsl(0, 100%, 67%);
+  }
+        
+  & input {
+    max-width: 100%;
+    height: 60%;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    font-size: 25px;
+    font-weight: 700;
+    border: solid 1px hsl(0, 0%, 86%);
+  }
+  
+  & input::placeholder {
+    color: hsl(0, 1%, 44%);
+  }
+  
+  & input:focus {
+    border: solid 1px hsl(259, 100%, 65%);
+  }
+  
+  & input.invalid {
+    border: solid 1px hsl(0, 100%, 67%);
+  }
+  
+  & .errorText {
+    color: hsl(0, 100%, 67%);
+    font-size: 5px;
+    font-style: italic;
+    font-weight: 500;
+  }
+}
+
+
+@media screen and (max-height: 650px) {
+  .input {
+    & label {
+      font-size: 13px;
+    }
+    
+    & input {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .input {
+    & label {
+      font-size: 1.5rem;
+    }
+    
+    & input {
+      font-size: 3rem;
+    }
+    
+    & .errorText {
+      font-size: 1rem;
+    }
+  }
+}

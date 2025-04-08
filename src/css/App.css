@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  overflow: hidden;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(0, 0%, 94%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  
+  & .card {
+    background-color: white;
+    width: 90%;
+    height: 65%;
+    border-radius: 2rem 2rem 7rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: start;
+    
+    & .inputContainer {
+      width: 100%;
+      height: 6.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+    }
+    
+    & .btnContainer {
+      width: 100%;
+      height: 3.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      
+      & hr {
+        width: 85%;
+        height: 0.1rem;
+        background: hsl(0, 0%, 94%);
+      }
+      
+      & .arrowBtn {
+        border: none;
+        width: 3.8rem;
+        height: 3.8rem;
+        border-radius: 100%;
+        background-color: hsl(259, 100%, 65%);
+        background-image: url(../assets/icon-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.1s ease;
+      }
+      
+      & .arrowBtn:hover {
+        background-color: black;
+      }
+      
+       & .arrowBtn:active {
+         transform: scale(0.950) translateX(-50%);
+       }
+    }
+    
+    & .displayContainer {
+      width: 80%;
+      margin-left: 2rem;
+      display: flex;
+      flex-direction: column;
+    }
+    
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .App {
+    & .card {
+      height: 70%;
+      
+      & .btnContainer {
+        height: 3rem;
+        
+        & .arrowBtn {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+      
+    }
+    
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .App {
+    & .card {
+      height: 60%;
+      width: 70%;
+      
+      
+      & .inputContainer {
+        width: 75%;
+        height: 7rem;
+      }
+      
+      & .btnContainer {
+        height: 5rem;
+        
+        & .arrowBtn {
+          width: 5rem;
+          height: 5rem;
+          left: 85%;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-height: 650px) {
+    .App {
+      & .card {
+        height: 70%;
+        width: 55%;
+        
+        
+        & .inputContainer {
+          height: 5rem;
+        }
+        
+        & .btnContainer {
+          height: 3.8rem;
+          
+          & .arrowBtn {
+            width: 3.8rem;
+            height: 3.8rem;
+            left: 88%;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .App {
+    & .card {
+      width: 45%;
+      height: 70%;
+    }
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .App {
+    & .card {
+      width: 40%;
+      height: 55%;
+      
+      & .inputContainer {
+        height: 11rem;
+      }
+      
+      & .btnContainer {
+        height: 7rem;
+        
+        & .arrowBtn {
+          width: 7rem;
+          height: 7rem;
+          left: 90%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .App {
+    & .card {
+      width: 35%;
+      height: 45%;
+      border-radius: 3rem 3rem 12rem 3rem;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+p {
+  font-weight: 900;
+  font-size: 3.2rem;
+        
+  & span {
+    color: hsl(259, 100%, 65%);
+  }
+}
+
+@media screen and (max-height: 650px) {
+  p {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  p {
+    font-size: 3.3rem;
+  }
+  
+  @media screen and (max-height: 650px) {
+    p {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  p {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  p {
+    font-size: 7rem;
+  }
+}
