@@ -11,7 +11,7 @@ body {
 .age-calculator {
     width: 90%;
     height: 62vh;
-    max-width: 550px;
+    
     background-color: white;
     border-radius: 2rem 2rem 8rem 2rem;
     position: absolute;
@@ -127,6 +127,7 @@ body {
     .age-calculator {
         gap: 2rem;
         padding: 2.5rem;
+        max-width: 550px;
 
         & form {
             justify-content: flex-start;
@@ -136,7 +137,7 @@ body {
 
                 & input {
                     padding: 15px 8px;
-                    font-size: 32px;
+                    font-size: 28px;
                 }
             }
         }
@@ -155,6 +156,41 @@ body {
             & p {
                font-size: 4rem;
                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .age-calculator {
+        height: 60vh;
+        max-width: 650px;
+        padding: 3rem;
+        justify-content: space-around;
+
+        & form {
+            & .input {
+                width: 25%;
+                max-width: 150px;
+
+                & input {
+                    font-size: 32px;
+                    padding: 25px 15px;
+                }
+            }
+        }
+
+        & .divider {
+            & img {
+                width: 3rem;
+                padding: 1.5rem;
+                left: calc(100% - 3rem);
+            }
+        }
+
+        & .age-result {
+            & p {
+                font-size: 5.5rem;
             }
         }
     }
