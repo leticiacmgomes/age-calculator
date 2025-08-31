@@ -164,7 +164,7 @@ body {
 @media (min-width: 1400px) {
     .age-calculator {
         height: 60vh;
-        max-width: 650px;
+        max-width: 750px;
         padding: 3rem;
         justify-content: space-around;
 
@@ -190,7 +190,7 @@ body {
 
         & .age-result {
             & p {
-                font-size: 5.5rem;
+                font-size: 6.5rem;
             }
         }
     }
