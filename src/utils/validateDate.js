@@ -14,7 +14,9 @@ export const validateDate = ({day, month, year}) => {
 
     const date = new Date(year, month - 1, day)
 
-    if (!isValid(date)) errors.day = "Must be a valid date"
+    if (!isValid(date) || date.getDate() != day || date.getMonth() != month || date.getFullYear() != year) {
+        errors.day = "Must be a valid date"
+    }
 
     return errors
 }
